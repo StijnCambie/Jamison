@@ -13076,7 +13076,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Define functions that compute N and R of a tree G</span>
@@ -13118,7 +13118,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#generate rooted trees, all of whose vertices have degree different from 2, except possibly the root v.</span>
@@ -13143,7 +13143,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#For the above rooted trees, we compute \overline N_v, overline R_v, N_v, R_v</span>
@@ -13200,27 +13200,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#We verify that the expression 22*Nw^2 + (-3*Nwb + 5*Rwb + 79)*Nw + (-5*Rw - 3)*Nwb - 25*Rw + 5*Rwb + 57 </span>
-<span class="c1">#is always positive when deg(w)&gt;1. The same computation will give some &quot;counterexamples&quot; when using X instead of Y,Z.</span>
-<span class="k">for</span> <span class="p">[</span><span class="n">Nb</span><span class="p">,</span><span class="n">Rb</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">Y</span><span class="p">:</span>
-    <span class="k">if</span> <span class="mi">22</span><span class="o">*</span><span class="n">N1</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">Nb</span><span class="o">+</span><span class="mi">5</span><span class="o">*</span><span class="n">Rb</span><span class="o">+</span><span class="mi">79</span><span class="p">)</span><span class="o">*</span><span class="n">N1</span><span class="o">+</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="o">*</span><span class="n">R1</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">Nb</span><span class="o">-</span><span class="mi">25</span><span class="o">*</span><span class="n">R1</span><span class="o">+</span><span class="mi">5</span><span class="o">*</span><span class="n">Rb</span><span class="o">+</span><span class="mi">57</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">([</span><span class="n">Nb</span><span class="p">,</span><span class="n">Rb</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">])</span>
-<span class="k">for</span> <span class="p">[</span><span class="n">Nb</span><span class="p">,</span><span class="n">Rb</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">Z</span><span class="p">:</span>
-    <span class="k">if</span> <span class="mi">22</span><span class="o">*</span><span class="n">N1</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">Nb</span><span class="o">+</span><span class="mi">5</span><span class="o">*</span><span class="n">Rb</span><span class="o">+</span><span class="mi">79</span><span class="p">)</span><span class="o">*</span><span class="n">N1</span><span class="o">+</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="o">*</span><span class="n">R1</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">Nb</span><span class="o">-</span><span class="mi">25</span><span class="o">*</span><span class="n">R1</span><span class="o">+</span><span class="mi">5</span><span class="o">*</span><span class="n">Rb</span><span class="o">+</span><span class="mi">57</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">([</span><span class="n">Nb</span><span class="p">,</span><span class="n">Rb</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#We compute all lists [Nb,Rb,N1,R1] for the cases where R_1&gt;N_1^2 /4</span>
@@ -13233,6 +13213,8 @@ div#notebook {
 <span class="k">for</span> <span class="p">[</span><span class="n">Nb</span><span class="p">,</span><span class="n">Rb</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">Z</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">R1</span><span class="o">&gt;</span><span class="n">N1</span><span class="o">^</span><span class="mi">2</span><span class="o">/</span><span class="mi">4</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">([</span><span class="n">Nb</span><span class="p">,</span><span class="n">Rb</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">])</span>
+        
+       
 </pre></div>
 
     </div>
@@ -13266,10 +13248,18 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#we define the function f that gives the difference between the RHS and LHS of the main inequality</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">N2b</span><span class="p">,</span><span class="n">R2b</span><span class="p">,</span><span class="n">N2</span><span class="p">,</span><span class="n">R2</span><span class="p">):</span>
+    <span class="n">Nv</span><span class="o">=</span><span class="n">N1</span><span class="o">*</span><span class="n">N2</span>
+    <span class="n">Nvb</span><span class="o">=</span><span class="n">N1b</span><span class="o">+</span><span class="n">N2b</span>
+    <span class="n">Rv</span><span class="o">=</span><span class="n">R1</span><span class="o">*</span><span class="n">N2</span><span class="o">+</span><span class="n">R2</span><span class="o">*</span><span class="n">N1</span><span class="o">-</span><span class="n">Nv</span>
+    <span class="n">Rvb</span><span class="o">=</span><span class="n">R1b</span><span class="o">+</span><span class="n">R2b</span>
+    <span class="n">LHS</span><span class="o">=</span><span class="n">Nvb</span><span class="o">*</span><span class="n">Rv</span><span class="o">-</span><span class="n">Nv</span><span class="o">*</span><span class="n">Rvb</span>
+    <span class="n">RHS</span><span class="o">=</span><span class="n">Nv</span><span class="o">*</span><span class="p">(</span><span class="n">Nv</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">Nvb</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">RHS</span><span class="o">-</span><span class="n">LHS</span>
 </pre></div>
 
     </div>
@@ -13279,10 +13269,58 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#We check that f is positive for all combinations with T1 and T2 having at most 3 leaves</span>
+<span class="n">A</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="p">[</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">29</span><span class="p">],[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">42</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                       <span class="p">,[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">20</span><span class="p">]]:</span>
+    <span class="k">for</span> <span class="p">[</span><span class="n">N2b</span><span class="p">,</span><span class="n">R2b</span><span class="p">,</span><span class="n">N2</span><span class="p">,</span><span class="n">R2</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">29</span><span class="p">],[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">42</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                       <span class="p">,[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">20</span><span class="p">]]:</span> 
+        <span class="n">A</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">N2b</span><span class="p">,</span><span class="n">R2b</span><span class="p">,</span><span class="n">N2</span><span class="p">,</span><span class="n">R2</span><span class="p">))</span>
+<span class="nb">min</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[36]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>24</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#we define the 4 functions that give some factors in decompositions</span>
+<span class="k">def</span> <span class="nf">f1</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">N1</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="n">N1</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">R1</span><span class="o">-</span><span class="n">N1</span><span class="o">*</span><span class="n">N1b</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">f2</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">N1</span><span class="o">*</span><span class="n">N1b</span><span class="o">+</span><span class="mi">4</span><span class="o">*</span><span class="n">R1</span><span class="o">-</span><span class="n">N1</span><span class="o">^</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">N1</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">f3</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">N1</span><span class="o">^</span><span class="mi">2</span><span class="o">-</span><span class="n">R1</span><span class="o">-</span><span class="n">N1</span><span class="o">*</span><span class="n">N1b</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">f4</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">N1</span><span class="o">*</span><span class="n">N1b</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">R1</span><span class="o">-</span><span class="n">N1</span><span class="o">^</span><span class="mi">2</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">N1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13292,52 +13330,146 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#the first two are positive if T is not P_2 or S_4</span>
+<span class="k">for</span> <span class="p">[</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">29</span><span class="p">],[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">42</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                       <span class="p">,[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">20</span><span class="p">]]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f1</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-1/2
+-7/2
+29/4
+5/4
+2
+61/2
+26
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="p">[</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">29</span><span class="p">],[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">42</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                       <span class="p">,[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">20</span><span class="p">]]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f2</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2
+37
+98
+190
+8
+54
+8
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#the other 2 factors are nonnegative for P_2 and S_4 </span>
+<span class="k">for</span> <span class="p">[</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">]]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f3</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1/2
+9/2
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="p">[</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">]]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f4</span><span class="p">(</span><span class="n">N1b</span><span class="p">,</span><span class="n">R1b</span><span class="p">,</span><span class="n">N1</span><span class="p">,</span><span class="n">R1</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+21
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
